@@ -1,0 +1,95 @@
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #24292e;
+  background-color: #f6f8fa;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+}
+input[type="text"] {
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #24292e;
+  background-color: #fff;
+  border: 1px solid #d1d5da;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+th {
+  font-weight: 600;
+  text-align: left;
+  padding: 8px 16px;
+  border-bottom: 2px solid #eaecef;
+}
+td {
+  padding: 8px 16px;
+  border-bottom: 1px solid #eaecef;
+}
+.table-header {
+  background-color: #f6f8fa;
+  border-top: 1px solid #eaecef;
+  border-bottom: 1px solid #eaecef;
+}
+.table-header th {
+  border-bottom: none;
+}
+.table-row:hover {
+  background-color: #f6f8fa;
+}
+.search-bar-container {
+  margin-bottom: 32px;
+}
+
+.filter {
+    position: relative;
+  }
+  
+  .filter-icon {
+    cursor: pointer;
+  }
+  
+  .filter-popup {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+  }
+  
+  .filter-popup label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .filter-popup input {
+    margin-bottom: 10px;
+  }
+  
+  .filter-popup button {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .popup {
+    display: none;
+  }
+  

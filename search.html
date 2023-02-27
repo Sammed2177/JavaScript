@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" y />
+
+      
+   
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Table</h1>
+      <br />
+      <div class="search-bar-container">
+        <input
+          type="text"
+          id="searchInput"
+          onkeyup="searchTable()"
+          placeholder="Search ...."
+        />
+      </div>
+      <div class="filter">
+        <span class="filter-icon">⚙️</span>
+        <button id="downloadButton" class="btn btn-primary">
+          <i class="fa fa-download"></i> 
+        </button>
+
+        <div class="filter-popup" class="popup">
+          <label for="filter-start">Start:</label>
+          <input type="number" id="filter-start" min="1" max="20" value="1">
+          <label for="filter-end">End:</label>
+          <input type="number" id="filter-end" min="1" max="20" value="20">
+          <button class="filter-button" href="#filter-popup" onclick="applyFilter()">Apply</button>
+        </div>
+      </div>
+      
+      <table>
+        <thead>
+          <tr class="table-header">
+            <th>User ID</th>
+            <th>User Name</th>
+            <th>User Address</th>
+            <th>Phone Number</th>
+          </tr>
+        </thead>
+        <tbody id="userTableBody"></tbody>
+      </table>
+    </div>
+    <div id="pagination"></div>
+  </body>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="./script.js"></script>
+  
+  
+
+</html>
